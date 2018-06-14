@@ -1,0 +1,19 @@
+{% extends "personalapp/header.html" %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12"> <h2 class="text-center">{{post.title}}</h2> </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">  <h6 class="text-center">Posted on {{post.date}}</h6> </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">  <br> </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"> <h3 class="text-center">{{post.body|safe|linebreaks}}</h3> </div>
+    </div>
+  </div>
+
+{% endblock %}

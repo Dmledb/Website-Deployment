@@ -1,0 +1,17 @@
+{% extends "personalapp/header.html" %}
+
+{% block content %}
+<!-- Whatever is placed here will show on the header html section that these placeholder blocks point to-->
+<div class="row">
+<div class="col-sm-6"><h1>Contact Info:</h1></div>
+<div class="col-sm-6">
+    {% for c in content %}
+      <p> {{c}} </p>
+    {% endfor %}
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

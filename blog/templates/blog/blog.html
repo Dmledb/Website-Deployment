@@ -1,0 +1,16 @@
+{% extends "personalapp/header.html" %}
+
+{% block content %}
+    {% for post in object_list %}
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 text-center">  </div>
+          <div class="col-md-4 text-center">  <h5 class="text-left">{{ post.date|date:"Y-m-d" }} <a href="/blog/{{post.id}}"> {{post.title}} </a></h5></div>
+          <div class="col-md-4 text-center">  </div>
+        </div>
+      </div>
+
+
+
+    {% endfor %}
+{% endblock %}
